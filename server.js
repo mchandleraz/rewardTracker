@@ -19,6 +19,9 @@ const server = restify.createServer({
     serializers: restify.bunyan.serializers
   })
 });
+server.use(restify.queryParser());
+server.use(restify.bodyParser());
+
 const uriRoot = `/api/${process.env.API_VERSION}`;
 
 server.get(uriRoot, rootController.get);
