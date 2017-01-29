@@ -6,12 +6,12 @@
   "scripts": {
     "start": "API_VERSION=1 NODE_ENV=development babel-node server.js --presets es2015,stage-2",
     "test": "jest",
-    "tdd": "jest --watch",
+    "test-watch": "jest --watch",
     "coverage": "jest --coverage"
   },
   "jest": {
-    "verbose": true,
-    "rootDir": "test"
+    "testPathDirs": ["test"],
+    "collectCoverageFrom": ["src/**/*.{js,jsx}", "!**/node_modules/**"]
   },
   "author": "mchandleraz",
   "license": "ISC",
