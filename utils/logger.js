@@ -1,4 +1,4 @@
-const Logger = require('bunyan');
+import Logger from 'bunyan';
 
 function Log(serializers) {
 	return new Logger({

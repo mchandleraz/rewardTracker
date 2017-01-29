@@ -1,4 +1,4 @@
-const notImplemented = require('../../utils/notImplemented');
+import notImplemented  from '../../utils/notImplemented';
 
 function RootController() {};
 

@@ -1,4 +1,4 @@
-const rootController = require('./rootController');
+import rootController from './rootController';
 
 module.exports = {
   rootController
