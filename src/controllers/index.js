@@ -1,14 +1,5 @@
-const notImplemented = require('../../utils/notImplemented');
+const rootController = require('./rootController');
 
-function RootController() {};
-
-RootController.prototype.get = function(req, res, next) {
-  res.send('Howdy.');
-  next();
+module.exports = {
+  rootController
 }
-
-RootController.prototype.post = notImplemented;
-RootController.prototype.put  = notImplemented;
-RootController.prototype.del  = notImplemented;
-
-module.exports = new RootController();
